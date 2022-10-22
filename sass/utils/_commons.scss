@@ -1,0 +1,35 @@
+body {
+  color: var(--primary-text-color);
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.03em;
+}
+
+.list {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+  text-decoration: none;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.link {
+  @extend %transDtiming;
+
+  text-decoration: none;
+  transition-property: color;
+}
+
+input {
+  outline: none;
+}
+
+textarea {
+  resize: none;
+  outline: none;
+}

@@ -1,0 +1,38 @@
+.cliets-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.client-list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.client-list__link {
+  @include centeredFlex();
+
+  padding: 16px 32px 16px 32px;
+
+  width: 170px;
+  height: 92px;
+
+  color: var(--icon-color);
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
+  transition-property: border-color, color;
+
+  @extend %transDtiming;
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+  }
+}
+
+.client-list__symbol {
+  width: 106px;
+  height: 60px;
+
+  fill: currentColor;
+}
