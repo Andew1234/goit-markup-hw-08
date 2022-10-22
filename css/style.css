@@ -34,11 +34,7 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.container {
-  width: 450px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
+@media screen and {
 }
 
 input {
@@ -48,6 +44,14 @@ input {
 textarea {
   resize: none;
   outline: none;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 450px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+  }
 }
 /* Header */
 
