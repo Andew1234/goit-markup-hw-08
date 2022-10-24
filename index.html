@@ -25,6 +25,26 @@
           <a href="./index.html" class="logo logo-header"
             ><span class="accent">Web</span>Studio</a
           >
+          <button
+            type="button"
+            class="menu-toggle js-close-menu"
+            aria-expanded="false"
+            aria-controls="mobil-menu"
+          >
+            <svg
+              width="24px"
+              height="16px"
+              
+                >
+             
+                <use
+                href="./images/icons/mobil-menu.svg#icon-menu "
+              ></use>
+            </svg>
+          </button>
+          
+          
+          <div class="menu" id="menu-container" data-menu>
           <ul class="site-nav list">
             <li class="site-nav__item">
               <a href="#" class="link site-nav__link site-nav__link--curent"
@@ -40,7 +60,7 @@
               <a href="#" class="link site-nav__link">Контакти</a>
             </li>
           </ul>
-        </nav>
+        
 
         <ul class="auth-nav list main-nav">
           <li class="site-nav__item">
@@ -61,10 +81,61 @@
             >
           </li>
         </ul>
+      </nav>
       </div>
+    </div>
     </header>
 
     <main>
+<!-- mobile-menu -->
+<div class="menu-container js-menu-container is-open" id="mobile-menu">
+            
+            <button type="button"
+             class="menu-toggle js-close-menu">
+            <svg
+              width="24px"
+              height="16px">
+    <use href="./images/icons/mobil-menu.svg#icon-close"></use>
+    </svg>
+  </button>
+  <ul class="mobile-menu list">
+    <li class="site-nav__item">
+      <a href="#" class="link site-nav__link site-nav__link--curent"
+        >Студія</a
+      >
+    </li>
+    <li class="site-nav__item">
+      <a href="./portfolio.html" class="link site-nav__link"
+        >Портфоліо</a
+      >
+    </li>
+    <li class="site-nav__item">
+      <a href="#" class="link site-nav__link">Контакти</a>
+    </li>
+  </ul>
+
+
+<ul class="auth-nav list main-nav">
+  <li class="site-nav__item">
+    <a href="mailto:info@devstudio.com" class="auth-nav__link link">
+      <svg class="site-nav__icon" width="16" height="12">
+        <use href="./images/icons/sprite.svg#icon-envelope"></use>
+      </svg>
+      info@devstudio.com</a
+    >
+  </li>
+
+  <li class="site-nav__item">
+    <a href="tel:+380961111111" class="auth-nav__link link">
+      <svg class="site-nav__icon" width="10" height="16">
+        <use href="./images/icons/sprite.svg#icon-smartphone"></use>
+      </svg>
+      +38 096 111 11 11</a
+    >
+  </li>
+</ul>
+</div>
+
       <!-- Hero Section -->
       <section class="hero-section overlay">
         <h1 class="hero-section__title">
@@ -197,11 +268,35 @@
 
           <ul class="section-team__list list">
             <li class="section-team__info">
-              <img
-                src="./images/img4.jpg"
-                alt="Ігор Дем'яненко"
-                class="section-team__img"
-              />
+              <div class="galary-img">
+                <picture>
+                  <source
+                  srcset="./images/img4-desk-1x 1x, ./images/img4-desk-2x 2x"
+                    media="(min-width: 1200px)"
+                    type="image/jpeg"
+
+                    
+                  />
+  
+                    <source
+                  srcset="./images/img4-tab-1x 1x, ./images/img4-tab-2x 2x"
+                    media="(min-width: 768px)"
+                    type="image/jpeg"
+                    
+                  />
+
+                 
+
+              <source srcset="./images/img4-mob-1x 1x, ./images/img4-mob-2x 2x"  
+              media="(max-width: 767px)" type="image/jpeg">
+
+                  <img
+                    src="./images/img4-mob-1x.jpg"
+                    alt="Ігор Дем'яненко"
+                    class="section-team__img"
+                  />
+                </picture>
+              </div>
               <div class="person-info">
                 <h3 class="person-info__name">Ігор Дем'яненко</h3>
                 <p lang="en" class="person-info__position">Product Designer</p>
@@ -599,6 +694,13 @@
         </form>
       </div>
     </div>
-    <script src="./js/modal.js"></script>
+    <script
+    defer
+    src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"
+  ></script>
+  <script defer src="js/mobile-menu.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
