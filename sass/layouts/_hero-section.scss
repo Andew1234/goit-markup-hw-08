@@ -33,8 +33,22 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../../goit-markup-hw-04/images/Hero_img.jpg);
+    url(../../images/Hero-Mob-1x.jpg);
   background-repeat: no-repeat;
   background-color: var(--background-color-hero);
   background-size: cover;
+
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  
+    background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../../images/Hero-Mob-2x.jpg);
+  
+}
+
 }

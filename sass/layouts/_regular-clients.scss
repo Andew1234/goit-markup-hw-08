@@ -1,19 +1,28 @@
 .cliets-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and(min-width:1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .client-list {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
   gap: 30px;
+
+  @media screen and(min-width:1200px) {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .client-list__link {
   @include centeredFlex();
+  padding: 16px 52px;
 
-  padding: 16px 32px 16px 32px;
-
-  width: 170px;
+  width: 210px;
   height: 92px;
 
   color: var(--icon-color);
@@ -27,6 +36,16 @@
   &:focus {
     color: var(--accent-color);
     border-color: var(--accent-color);
+  }
+
+  @media screen and(min-width:768px) {
+    padding: 16px 60px;
+    width: 226px;
+  }
+
+  @media screen and(min-width:1200px) {
+    padding: 16px 32px;
+    width: 170px;
   }
 }
 
