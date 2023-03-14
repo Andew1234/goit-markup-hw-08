@@ -40,12 +40,60 @@
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
+
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../../goit-markup-hw-04/images/Hero_img.jpg);
+    url(../../images/Hero_Section/Header_img-Mob@1x.jpg);
+
   background-repeat: no-repeat;
   background-color: var(--background-color-hero);
   background-size: cover;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../../images/Hero_Section/Header_img-Mob@2x.jpg);
+  }
+
+  @media (min-width: 768px) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../../images/Hero_Section/Header_img-Tab@1x.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../../images/Hero_Section/Header_img-Tab@2x.jpg);
+    }
+  }
+
+  @media (min-width: 1200px) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../../images/Hero_Section/Hero_img-Desktop@1x.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../../images/Hero_Section/Hero_img-Desktop@2x.jpg);
+    }
+  }
 }
