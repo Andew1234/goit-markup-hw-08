@@ -21,9 +21,21 @@
 
 .button-list {
   display: flex;
-  justify-content: center;
   gap: 8px;
-  margin-bottom: 50px;
+
+  @media (max-width: 767px) {
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: 768px) {
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: 1200px) {
+    justify-content: center;
+    margin-bottom: 50px;
+  }
 }
 
 .filter-btn:hover,
