@@ -12,7 +12,7 @@
   display: flex;
   gap: 30px;
 
-  @media (max-width: 767px) {
+  @media (max-width: 767.9px) {
     flex-direction: column;
   }
 
@@ -110,4 +110,8 @@
     letter-spacing: 3%;
     color: var(--primary-background-color);
   }
+}
+
+.picture-card {
+  width: 100%;
 }

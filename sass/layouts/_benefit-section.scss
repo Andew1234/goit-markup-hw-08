@@ -11,7 +11,7 @@
 .benefit-list {
   display: flex;
 
-  @media (max-width: 767px) {
+  @media (max-width: 767.9px) {
     flex-direction: column;
   }
 
@@ -68,6 +68,10 @@
   text-transform: uppercase;
 
   text-align: center;
+
+  @media (min-width: 768px) {
+    text-align: left;
+  }
 }
 
 .container-benefit__text {

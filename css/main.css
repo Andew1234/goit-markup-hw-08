@@ -581,7 +581,7 @@ textarea {
 }
 
 .overlay {
-  max-width: 1600px;
+  max-width: 480px;
   margin-left: auto;
   margin-right: auto;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/index-img/hero_section/hero-img__mob@1x.jpg);
@@ -620,6 +620,16 @@ textarea {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/index-img/hero_section/hero-img__desktop@2x.jpg);
   }
 }
+@media (min-width: 768px) {
+  .overlay {
+    max-width: 768px;
+  }
+}
+@media (min-width: 1200px) {
+  .overlay {
+    max-width: 1600px;
+  }
+}
 
 .benefit-section {
   padding-top: 60px;
@@ -637,7 +647,7 @@ textarea {
   display: -ms-flexbox;
   display: flex;
 }
-@media (max-width: 767px) {
+@media (max-width: 767.9px) {
   .benefit-list {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -709,6 +719,11 @@ textarea {
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
+}
+@media (min-width: 768px) {
+  .container-benefit__title {
+    text-align: left;
+  }
 }
 
 .container-benefit__text {
@@ -813,7 +828,7 @@ textarea {
   display: flex;
   gap: 30px;
 }
-@media (max-width: 767px) {
+@media (max-width: 767.9px) {
   .section-team .section-team__list {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -874,6 +889,10 @@ textarea {
   .section-team {
     padding-bottom: 30px;
   }
+}
+
+.person-picture {
+  width: 100%;
 }
 
 .cliets-section {
@@ -1157,12 +1176,26 @@ textarea {
     text-align: center;
   }
 }
+@media (min-width: 1200px) {
+  .container-info {
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
 
 .menu-container {
   position: fixed;
   top: 0;
   left: 0;
-  padding: 48px 83px 48px 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 48px 0px 48px 40px;
   width: 100%;
   height: 100%;
   background-color: var(--primary-background-color);
@@ -1196,6 +1229,11 @@ textarea {
   height: 40px;
   background-color: transparent;
   border: none;
+}
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
 }
 
 .menu-toggle.js-close-menu {
@@ -1250,7 +1288,7 @@ textarea {
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
   gap: 32px;
-  margin-top: 180px;
+  margin-top: auto;
 }
 
 .mobile-auth-email {
@@ -1273,11 +1311,14 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-top: 64px;
   margin-bottom: 0;
+  gap: 56px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .mobile-social__link {

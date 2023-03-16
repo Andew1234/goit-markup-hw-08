@@ -3,7 +3,9 @@
   top: 0;
   left: 0;
 
-  padding: 48px 83px 48px 40px;
+  display: flex;
+  flex-direction: column;
+  padding: 48px 0px 48px 40px;
 
   width: 100%;
   height: 100%;
@@ -36,6 +38,10 @@
   height: 40px;
   background-color: transparent;
   border: none;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
 }
 
 .menu-toggle.js-close-menu {
@@ -79,7 +85,7 @@
   flex-direction: column-reverse;
 
   gap: 32px;
-  margin-top: 180px;
+  margin-top: auto;
 }
 
 .mobile-auth-email {
@@ -102,10 +108,11 @@
 
 .mobile-social {
   display: flex;
-  justify-content: space-between;
-
+  flex-wrap: wrap;
   margin-top: 64px;
   margin-bottom: 0;
+  gap: 56px;
+  justify-content: flex-start;
 }
 
 .mobile-social__link {

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Студія</title>
- 
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -46,7 +46,11 @@
           class="menu-toggle js-open-menu"
           aria-expanded="false"
           aria-controls="mobile-menu">
-          <svg class="mobile-icon" aria-label="mobile menu switcher">
+          <svg
+            class="mobile-icon"
+            aria-label="mobile menu switcher"
+            width="32"
+            height="22">
             <use href="./images/icons/sprite.svg#icon-burger"></use>
           </svg>
         </button>
@@ -70,12 +74,7 @@
             >
           </li>
         </ul>
-      
-      
       </div>
-      
-
-        
     </header>
 
     <main>
@@ -163,8 +162,10 @@
             <li class="section-work__card">
               <div class="card-product">
                 <img
-                srcset="./images/index-img/work-type__section/img1.jpg 1x, 
-                        ./images/index-img/work-type__section/img1__@2x.jpg 2x"
+                  srcset="
+                    ./images/index-img/work-type__section/img1.jpg      1x,
+                    ./images/index-img/work-type__section/img1__@2x.jpg 2x
+                  "
                   src="./images/index-img/work-type__section/img1.jpg"
                   alt="Кодинг"
                   width="370"
@@ -177,8 +178,10 @@
             <li class="section-work__card">
               <div class="card-product">
                 <img
-                srcset="./images/index-img/work-type__section/img2.jpg 1x, 
-                        ./images/index-img/work-type__section/img2__@2x.jpg 2x"
+                  srcset="
+                    ./images/index-img/work-type__section/img2.jpg      1x,
+                    ./images/index-img/work-type__section/img2__@2x.jpg 2x
+                  "
                   src="./images/index-img/work-type__section/img2.jpg"
                   alt="Оптимізація"
                   width="370"
@@ -191,7 +194,10 @@
             <li class="section-work__card">
               <div class="card-product">
                 <img
-                srcset="./images/index-img/work-type__section/img3.jpg 1x, ./images/index-img/work-type__section/img3__@2x.jpg 2x"
+                  srcset="
+                    ./images/index-img/work-type__section/img3.jpg      1x,
+                    ./images/index-img/work-type__section/img3__@2x.jpg 2x
+                  "
                   src="./images/index-img/work-type__section/img3.jpg"
                   alt="Дизайн"
                   width="370"
@@ -207,25 +213,38 @@
 
       <!-- Section Our Team -->
 
-      <section class="section-team">        
-        
+      <section class="section-team">
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
 
           <ul class="section-team__list list">
             <li class="section-team__info">
-             
               <picture>
-                <source media="(min-width: 1200px)" srcset="./images/index-img/team-members_section/product-designer__desktop@1x.jpg 1x, 
-                                                            ./images/index-img/team-members_section/product-designer__desktop@2x.jpg 2x" />
-               <source media="(min-width: 768px)" srcset="./images/index-img/team-members_section/product-designer__tablet@1x.jpg 1x, 
-                                                          ./images/index-img/team-members_section/product-designer__tablet@2x.jpg 2x" />
-               <source media="(max-width: 767px)" srcset="./images/index-img/team-members_section/product-designer__mobile@1x.jpg 1x, 
-                                                          ./images/index-img/team-members_section/product-designer__mobile@2x.jpg 2x" />
-                <img src="./images/index-img/team-members_section/product-designer__mobile@1x.jpg" alt="Product Designer" width="100%"/>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/index-img/team-members_section/product-designer__desktop@1x.jpg 1x,
+                    ./images/index-img/team-members_section/product-designer__desktop@2x.jpg 2x
+                  " />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/index-img/team-members_section/product-designer__tablet@1x.jpg 1x,
+                    ./images/index-img/team-members_section/product-designer__tablet@2x.jpg 2x
+                  " />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/index-img/team-members_section/product-designer__mobile@1x.jpg 1x,
+                    ./images/index-img/team-members_section/product-designer__mobile@2x.jpg 2x
+                  " />
+                <img
+                  class="person-picture"
+                  src="./images/index-img/team-members_section/product-designer__mobile@1x.jpg"
+                  alt="Product Designer" />
               </picture>
 
-             <div class="person-info">
+              <div class="person-info">
                 <h3 class="person-info__name">Ігор Дем'яненко</h3>
                 <p lang="en" class="person-info__position">Product Designer</p>
                 <ul class="social-list list">
@@ -262,15 +281,29 @@
             </li>
 
             <li class="section-team__info">
-              
               <picture>
-                <source media="(min-width: 1200px)" srcset="./images/index-img/team-members_section/frontend-developer__desktop@1x.jpg 1x, 
-                                                            ./images/index-img/team-members_section/frontend-developer__desktop@2x.jpg 2x" />
-               <source media="(min-width: 768px)" srcset="./images/index-img/team-members_section/frontend-developer__tablet@1x.jpg 1x, 
-                                                          ./images/index-img/team-members_section/frontend-developer__tablet@2x.jpg 2x" />
-               <source media="(max-width: 767px)" srcset="./images/index-img/team-members_section/frontend-developer__mobile@1x.jpg 1x, 
-                                                          ./images/index-img/team-members_section/frontend-developer__mobile@2x.jpg 2x" />
-                <img src="./images/index-img/team-members_section/frontend-developer__mobile@1x.jpg" alt="Frontend Developer" width="100%"/>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/index-img/team-members_section/frontend-developer__desktop@1x.jpg 1x,
+                    ./images/index-img/team-members_section/frontend-developer__desktop@2x.jpg 2x
+                  " />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/index-img/team-members_section/frontend-developer__tablet@1x.jpg 1x,
+                    ./images/index-img/team-members_section/frontend-developer__tablet@2x.jpg 2x
+                  " />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/index-img/team-members_section/frontend-developer__mobile@1x.jpg 1x,
+                    ./images/index-img/team-members_section/frontend-developer__mobile@2x.jpg 2x
+                  " />
+                <img
+                  class="person-picture"
+                  src="./images/index-img/team-members_section/frontend-developer__mobile@1x.jpg"
+                  alt="Frontend Developer" />
               </picture>
 
               <div class="person-info">
@@ -312,15 +345,29 @@
             </li>
 
             <li class="section-team__info">
-              
               <picture>
-                <source media="(min-width: 1200px)" srcset="./images/index-img/team-members_section/marketing__desktop@1x.jpg 1x, 
-                                                            ./images/index-img/team-members_section/marketing__desktop@2x.jpg 2x" />
-               <source media="(min-width: 768px)" srcset="./images/index-img/team-members_section/marketing__tablet@1x.jpg 1x, 
-                                                          ./images/index-img/team-members_section/marketing__tablet@2x.jpg 2x" />
-               <source media="(max-width: 767px)" srcset="./images/index-img/team-members_section/marketing__mobile@1x.jpg 1x, 
-                                                          ./images/index-img/team-members_section/marketing__mobile@2x.jpg 2x" />
-                <img src="./images/index-img/team-members_section/marketing__mobile@1x.jpg" alt="Marketing" width="100%"/>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/index-img/team-members_section/marketing__desktop@1x.jpg 1x,
+                    ./images/index-img/team-members_section/marketing__desktop@2x.jpg 2x
+                  " />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/index-img/team-members_section/marketing__tablet@1x.jpg 1x,
+                    ./images/index-img/team-members_section/marketing__tablet@2x.jpg 2x
+                  " />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/index-img/team-members_section/marketing__mobile@1x.jpg 1x,
+                    ./images/index-img/team-members_section/marketing__mobile@2x.jpg 2x
+                  " />
+                <img
+                  class="person-picture"
+                  src="./images/index-img/team-members_section/marketing__mobile@1x.jpg"
+                  alt="Marketing" />
               </picture>
 
               <div class="person-info">
@@ -360,15 +407,29 @@
             </li>
 
             <li class="section-team__info">
-              
               <picture>
-                <source media="(min-width: 1200px)" srcset="./images/index-img/team-members_section/ui-designer__desktop@1x.jpg 1x, 
-                                                            ./images/index-img/team-members_section/ui-designer__desktop@2x.jpg 2x" />
-               <source media="(min-width: 768px)" srcset="./images/index-img/team-members_section/ui-designer__tablet@1x.jpg 1x, 
-                                                          ./images/index-img/team-members_section/ui-designer__tablet@2x.jpg 2x" />
-               <source media="(max-width: 767px)" srcset="./images/index-img/team-members_section/ui-designer__mobile@1x.jpg 1x, 
-                                                          ./images/index-img/team-members_section/ui-designer__mobile@2x.jpg 2x" />
-                <img src="./images/index-img/team-members_section/ui-designer__mobile@1x.jpg" alt="UI Designer" width="100%"/>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/index-img/team-members_section/ui-designer__desktop@1x.jpg 1x,
+                    ./images/index-img/team-members_section/ui-designer__desktop@2x.jpg 2x
+                  " />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/index-img/team-members_section/ui-designer__tablet@1x.jpg 1x,
+                    ./images/index-img/team-members_section/ui-designer__tablet@2x.jpg 2x
+                  " />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/index-img/team-members_section/ui-designer__mobile@1x.jpg 1x,
+                    ./images/index-img/team-members_section/ui-designer__mobile@2x.jpg 2x
+                  " />
+                <img
+                  class="person-picture"
+                  src="./images/index-img/team-members_section/ui-designer__mobile@1x.jpg"
+                  alt="UI Designer" />
               </picture>
 
               <div class="person-info">
@@ -461,71 +522,72 @@
     <footer class="footer">
       <div class="container footer__container">
         <div class="container-info">
-        <div clas="footer-contact__container">
-          <a href="./index.html" class="logo logo-footer"
-            ><span class="accent">Web</span>Studio</a
-          >
+          <div class="footer-contact__container">
+            <a href="./index.html" class="logo logo-footer"
+              ><span class="accent">Web</span>Studio</a
+            >
 
-          <address>
-            <ul class="footer-contact__list list">
-              <li class="footer-contact__item link">
-                <a
-                  href="https://goo.gl/maps/FE5Qai6ADEzeRYqn9"
-                  target="_blank"
-                  rel="noreferrer noopener nofollow"
-                  class="footer-contact__address link"
-                  >м. Київ, пр-т Лесі Українки, 26</a
-                >
+            <address>
+              <ul class="footer-contact__list list">
+                <li class="footer-contact__item link">
+                  <a
+                    href="https://goo.gl/maps/FE5Qai6ADEzeRYqn9"
+                    target="_blank"
+                    rel="noreferrer noopener nofollow"
+                    class="footer-contact__address link"
+                    >м. Київ, пр-т Лесі Українки, 26</a
+                  >
+                </li>
+
+                <li class="link">
+                  <a
+                    href="mailto:info@devstudio.com"
+                    class="footer-contact__link link"
+                    >info@devstudio.com</a
+                  >
+                </li>
+
+                <li class="link">
+                  <a href="tel:+380961111111" class="footer-contact__link link"
+                    >+38 096 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="footer-social">
+            <b class="footer-text">приєднуйтесь</b>
+            <ul class="footer-social__list list">
+              <li class="footer-social__item">
+                <a href="" class="social-list__link footer-item link"
+                  ><svg class="social-list__symbol footer-symbol">
+                    <use
+                      href="./images/icons/sprite.svg#icon-instagram"></use></svg
+                ></a>
               </li>
-
-              <li class="link">
-                <a
-                  href="mailto:info@devstudio.com"
-                  class="footer-contact__link link"
-                  >info@devstudio.com</a
-                >
+              <li class="footer-social__item">
+                <a href="" class="social-list__link footer-item link"
+                  ><svg class="social-list__symbol footer-symbol">
+                    <use
+                      href="./images/icons/sprite.svg#icon-twitter"></use></svg
+                ></a>
               </li>
-
-              <li class="link">
-                <a href="tel:+380961111111" class="footer-contact__link link"
-                  >+38 096 111 11 11</a
-                >
+              <li class="footer-social__item">
+                <a href="" class="social-list__link footer-item link"
+                  ><svg class="social-list__symbol footer-symbol">
+                    <use
+                      href="./images/icons/sprite.svg#icon-facebook"></use></svg
+                ></a>
+              </li>
+              <li class="footer-social__item">
+                <a href="" class="social-list__link footer-item link">
+                  <svg class="social-list__symbol footer-symbol">
+                    <use
+                      href="./images/icons/sprite.svg#icon-linkedin"></use></svg
+                ></a>
               </li>
             </ul>
-          </address>
-        </div>
-        <div class="footer-social">
-          <b class="footer-text">приєднуйтесь</b>
-          <ul class="footer-social__list list">
-            <li class="footer-social__item">
-              <a href="" class="social-list__link footer-item link"
-                ><svg class="social-list__symbol footer-symbol">
-                  <use
-                    href="./images/icons/sprite.svg#icon-instagram"></use></svg
-              ></a>
-            </li>
-            <li class="footer-social__item">
-              <a href="" class="social-list__link footer-item link"
-                ><svg class="social-list__symbol footer-symbol">
-                  <use href="./images/icons/sprite.svg#icon-twitter"></use></svg
-              ></a>
-            </li>
-            <li class="footer-social__item">
-              <a href="" class="social-list__link footer-item link"
-                ><svg class="social-list__symbol footer-symbol">
-                  <use
-                    href="./images/icons/sprite.svg#icon-facebook"></use></svg
-              ></a>
-            </li>
-            <li class="footer-social__item">
-              <a href="" class="social-list__link footer-item link">
-                <svg class="social-list__symbol footer-symbol">
-                  <use
-                    href="./images/icons/sprite.svg#icon-linkedin"></use></svg
-              ></a>
-            </li>
-          </ul>
-        </div>
+          </div>
         </div>
 
         <div class="footer-container">
@@ -543,7 +605,6 @@
           </form>
         </div>
       </div>
-      </div>
     </footer>
 
     <!-- Modal -->
@@ -551,7 +612,6 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="close-button" data-modal-close>
-          
           <svg
             width="18"
             height="18"
@@ -627,54 +687,59 @@
           <use href="./images/icons/sprite.svg#icon-close"></use>
         </svg>
       </button>
-      
-        <ul class="mobile-nav list">
-          <li class="mobile-nav__item"><a href="./index.html" class="link">Студія</a></li>
-          <li class="mobile-nav__item"><a href="./portfolio.html" class="link">Портфоліо</a></li>
-          <li class="mobile-nav__item"><a href="" class="link">Контакти</a></li>
-        </ul>
 
-      
-        <ul class="mobile-auth-nav list">
-          <li class="mobile-auth-nav__item"><a href="mailto:info@devstudio.com" class="mobile-auth-email link">info@devstudio.com</a></li>
-          
-            <li class="mobile-auth-nav__item"><a href="tel:+380961111111" class="mobile-auth-tel link">+38 096 111 11 11</a></li>
-          
-        </ul>
+      <ul class="mobile-nav list">
+        <li class="mobile-nav__item">
+          <a href="./index.html" class="link">Студія</a>
+        </li>
+        <li class="mobile-nav__item">
+          <a href="./portfolio.html" class="link">Портфоліо</a>
+        </li>
+        <li class="mobile-nav__item"><a href="" class="link">Контакти</a></li>
+      </ul>
 
-      
-        <ul class="social-list list mobile-social">
-          <li class="social-list__item">
-            <a href="" class="social-list__link mobile-social__link link"
-              ><svg class="social-list__symbol">
-                <use
-                  href="./images/icons/sprite.svg#icon-instagram"></use></svg
-            ></a>
-          </li>
-          <li class="social-list__item">
-            <a href="" class="social-list__link mobile-social__link link"
-              ><svg class="social-list__symbol">
-                <use
-                  href="./images/icons/sprite.svg#icon-twitter"></use></svg
-            ></a>
-          </li>
-          <li class="social-list__item">
-            <a href="" class="social-list__link mobile-social__link link"
-              ><svg class="social-list__symbol">
-                <use
-                  href="./images/icons/sprite.svg#icon-facebook"></use></svg
-            ></a>
-          </li>
-          <li class="social-list__item">
-            <a href="" class="social-list__link mobile-social__link link"
-              ><svg class="social-list__symbol">
-                <use
-                  href="./images/icons/sprite.svg#icon-linkedin"></use></svg
-            ></a>
-          </li>
-        </ul>
-      </div>
-<!-- js-scripts -->
+      <ul class="mobile-auth-nav list">
+        <li class="mobile-auth-nav__item">
+          <a href="mailto:info@devstudio.com" class="mobile-auth-email link"
+            >info@devstudio.com</a
+          >
+        </li>
+
+        <li class="mobile-auth-nav__item">
+          <a href="tel:+380961111111" class="mobile-auth-tel link"
+            >+38 096 111 11 11</a
+          >
+        </li>
+      </ul>
+
+      <ul class="social-list list mobile-social">
+        <li class="social-list__item">
+          <a href="" class="social-list__link mobile-social__link link"
+            ><svg class="social-list__symbol">
+              <use href="./images/icons/sprite.svg#icon-instagram"></use></svg
+          ></a>
+        </li>
+        <li class="social-list__item">
+          <a href="" class="social-list__link mobile-social__link link"
+            ><svg class="social-list__symbol">
+              <use href="./images/icons/sprite.svg#icon-twitter"></use></svg
+          ></a>
+        </li>
+        <li class="social-list__item">
+          <a href="" class="social-list__link mobile-social__link link"
+            ><svg class="social-list__symbol">
+              <use href="./images/icons/sprite.svg#icon-facebook"></use></svg
+          ></a>
+        </li>
+        <li class="social-list__item">
+          <a href="" class="social-list__link mobile-social__link link"
+            ><svg class="social-list__symbol">
+              <use href="./images/icons/sprite.svg#icon-linkedin"></use></svg
+          ></a>
+        </li>
+      </ul>
+    </div>
+    <!-- js-scripts -->
 
     <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>

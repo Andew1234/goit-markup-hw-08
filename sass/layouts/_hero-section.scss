@@ -37,7 +37,7 @@
 }
 
 .overlay {
-  max-width: 1600px;
+  max-width: 480px;
   margin-left: auto;
   margin-right: auto;
 
@@ -95,5 +95,13 @@
         ),
         url(../images/index-img/hero_section/hero-img__desktop@2x.jpg);
     }
+  }
+
+  @media (min-width: 768px) {
+    max-width: 768px;
+  }
+
+  @media (min-width: 1200px) {
+    max-width: 1600px;
   }
 }

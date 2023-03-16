@@ -617,7 +617,7 @@ textarea {
   display: flex;
   gap: 30px;
 }
-@media (max-width: 767px) {
+@media (max-width: 767.9px) {
   .portfolio-list {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -722,6 +722,10 @@ textarea {
   line-height: 1.55;
   letter-spacing: 3%;
   color: var(--primary-background-color);
+}
+
+.picture-card {
+  width: 100%;
 }
 
 .footer {
@@ -929,12 +933,26 @@ textarea {
     text-align: center;
   }
 }
+@media (min-width: 1200px) {
+  .container-info {
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
 
 .menu-container {
   position: fixed;
   top: 0;
   left: 0;
-  padding: 48px 83px 48px 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 48px 0px 48px 40px;
   width: 100%;
   height: 100%;
   background-color: var(--primary-background-color);
@@ -968,6 +986,11 @@ textarea {
   height: 40px;
   background-color: transparent;
   border: none;
+}
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
 }
 
 .menu-toggle.js-close-menu {
@@ -1022,7 +1045,7 @@ textarea {
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
   gap: 32px;
-  margin-top: 180px;
+  margin-top: auto;
 }
 
 .mobile-auth-email {
@@ -1045,11 +1068,14 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-top: 64px;
   margin-bottom: 0;
+  gap: 56px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .mobile-social__link {
